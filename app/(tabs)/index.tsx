@@ -1,4 +1,4 @@
-import { router } from 'expo-router'; // DÙNG LA BÀN XỊN CỦA EXPO ROUTER
+import { router } from 'expo-router';
 import React, { useState } from 'react';
 import { Alert, Button, Platform, SafeAreaView, StatusBar, StyleSheet, Text, TextInput, View } from 'react-native';
 
@@ -32,7 +32,6 @@ export default function LoginScreen() {
 
   const handlePress = () => {
     if (validatePhoneNumber()) {
-      // BẮN SANG FILE home.tsx VÀ MANG THEO DỮ LIỆU SỐ ĐIỆN THOẠI
       router.replace({ pathname: '/home', params: { phoneNumber: phone } });
     }
   };
